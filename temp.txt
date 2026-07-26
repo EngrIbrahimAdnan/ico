@@ -1,1 +1,13 @@
-Progress on the Nexus Repository v3.93.2 upgrade remains blocked pending provisioning of the requested UAT server. The infrastructure request has now exceeded its SLA by over two weeks, and no update or response has been received to date. Follow-up will continue, as completion of the UAT environment is a prerequisite for installation, configuration, and migration activities.
+Hi Team,
+
+I hope you're doing well.
+
+I am following up on the UAT server provisioning request submitted for the Nexus Repository v3.93.2 upgrade and migration (Ticket: <Ticket Number>).
+
+Could you please provide an update on the current status of the request and, if available, an estimated timeline for provisioning? If any additional information or action is required from our side, please let us know and we will be happy to assist.
+
+I've copied <Manager's Name> for visibility.
+
+Thank you, and I look forward to your update.
+
+Kind regards,
