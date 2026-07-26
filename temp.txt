@@ -1,13 +1,1 @@
-Hi Team,
-
-I hope you're doing well.
-
-I am following up on the UAT server provisioning request submitted for the Nexus Repository v3.93.2 upgrade and migration (Ticket: <Ticket Number>).
-
-Could you please provide an update on the current status of the request and, if available, an estimated timeline for provisioning? If any additional information or action is required from our side, please let us know and we will be happy to assist.
-
-I've copied <Manager's Name> for visibility.
-
-Thank you, and I look forward to your update.
-
-Kind regards,
+Follow-up: UAT Server Provisioning for Nexus Repository Upgrade
