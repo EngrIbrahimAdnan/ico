@@ -1,13 +1,1 @@
-Hi Team,
-
-Following the recent updates, I would like to clarify the intended use of the Development dependency sub-tasks.
-
-The Development dependency sub-tasks are intended to remain assigned to the Development team until the required Development activities have been completed and successfully validated. Reassigning these sub-tasks to DevSecOps prior to completion does not accurately reflect the ownership or current status of the outstanding work.
-
-To maintain clear traceability and visibility throughout the validation process, kindly keep the Development dependency sub-tasks assigned to the Development team and continue documenting any updates within the respective Jira tickets. DevSecOps will continue validating the deliverables, document any observations, and provide feedback through the same tickets until the activities are successfully completed.
-
-Thank you for your cooperation.
-
-Regards,
-
-[Your Name]
+Progress on the Nexus Repository v3.93.2 upgrade remains blocked pending provisioning of the requested UAT server. The infrastructure request has now exceeded its SLA by over two weeks, and no update or response has been received to date. Follow-up will continue, as completion of the UAT environment is a prerequisite for installation, configuration, and migration activities.
