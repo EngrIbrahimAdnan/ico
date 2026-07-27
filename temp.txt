@@ -1,12 +1,15 @@
-Assistance Required – VMware Snapshot for Bitbucket DR Server
+Hi [Digital Manager],
 
+I hope you are doing well.
 
+As part of the Enterprise Services validation activities, the DAST configuration remains an outstanding dependency before security validation can proceed.
 
+At this stage, we have not received any update regarding the progress or expected completion of the DAST configuration from the Security team. Could you kindly advise on the current status and whether there are any blockers preventing this activity from progressing?
 
-Hi Team,
+Once the DAST configuration is completed, we will proceed with the remaining validation activities accordingly.
 
-A VMware snapshot request has been submitted for the Bitbucket DR server, which is currently under commissioning.
+Thank you.
 
-Kindly assist with completing the snapshot at your earliest convenience, as it is required before we proceed with the remaining DR configuration activities.
+Regards,
 
-Thank you for your support.
+[Your Name]
