@@ -1,16 +1,16 @@
 Hi Team,
 
-Thank you for the update.
+Thank you for the update and approval.
 
-The approved 620 GB storage will be sufficient for the initial UAT deployment. Our intended filesystem allocation is as follows:
+Following our discussion, we will proceed with the approved 620 GB storage allocation for the initial UAT environment.
 
-~170 GB allocated across the operating system and application filesystems (/, /home, /tmp, /var, /var/log, and /var/log/audit).
-The remaining capacity will be allocated to /u01 as the initial Nexus Repository blob store for UAT activities.
+The storage will be allocated as follows:
 
-As discussed, the dedicated blob storage will be expanded at a later stage to meet the planned 4 TB, with future scalability to 8 TB, as repository migration progresses towards Production.
+Operating System / Application filesystems (/, /home, /tmp, /var, /var/log, /var/log/audit) – approximately 170 GB
+/u01 – remaining capacity (~450 GB) to serve as the initial Nexus Repository blob store for UAT activities.
 
-Please proceed with provisioning based on the above. I will raise a separate request for the additional blob storage expansion when required.
+A separate request will be raised at a later stage to expand the /u01 filesystem to the planned 4 TB, with future scalability to 8 TB, in line with the production migration plan.
+
+I will raise the commissioning request with the above filesystem layout.
 
 Thank you.
-
-Kind regards,
