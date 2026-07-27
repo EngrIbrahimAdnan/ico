@@ -1,10 +1,12 @@
-CAB Requirement for Bitbucket DR Certificate Renewal
+Assistance Required – VMware Snapshot for Bitbucket DR Server
 
-Hi [Manager's Name],
 
-During Bitbucket DR testing, we've reached the LDAP authentication stage. After enabling LDAPS (TCP/636), the connection now fails with a certificate trust error, indicating that a certificate update/renewal is required for the DR server.
 
-Before proceeding, could you please confirm whether this activity requires a CAB change, or can it be completed without one since this is a newly commissioned DR environment?
 
-Thanks,
-Ibrahim
+Hi Team,
+
+A VMware snapshot request has been submitted for the Bitbucket DR server, which is currently under commissioning.
+
+Kindly assist with completing the snapshot at your earliest convenience, as it is required before we proceed with the remaining DR configuration activities.
+
+Thank you for your support.
