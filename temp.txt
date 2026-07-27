@@ -1,66 +1,10 @@
+CAB Requirement for Bitbucket DR Certificate Renewal
 
+Hi [Manager's Name],
 
-## 1. Email Reply
+During Bitbucket DR testing, we've reached the LDAP authentication stage. After enabling LDAPS (TCP/636), the connection now fails with a certificate trust error, indicating that a certificate update/renewal is required for the DR server.
 
-**Subject:** RE: Nexus UAT Server Provisioning
+Before proceeding, could you please confirm whether this activity requires a CAB change, or can it be completed without one since this is a newly commissioned DR environment?
 
-Hi Team,
-
-Thank you for the update and approval.
-
-Following our discussion, we will proceed with the approved **620 GB** storage allocation for the initial UAT environment.
-
-The storage will be allocated as follows:
-
-* **Operating System / Application filesystems** (`/`, `/home`, `/tmp`, `/var`, `/var/log`, `/var/log/audit`) – approximately **170 GB**
-* **`/u01`** – remaining capacity (~450 GB) to serve as the initial Nexus Repository blob store for UAT activities.
-
-A separate request will be raised at a later stage to expand the `/u01` filesystem to the planned **4 TB**, with future scalability to **8 TB**, in line with the production migration plan.
-
-I will raise the commissioning request with the above filesystem layout.
-
-Thank you.
-
-Kind regards,
-
-<Your Name>
-
-
-
-
-
-
----
-
-# 2. Commissioning Ticket
-
-### Title
-
-**Commission Nexus Repository UAT Server – Filesystem Configuration**
-
----
-
-### Description
-
-Please configure the filesystems for the approved Nexus Repository UAT server as follows:
-
-| Mount Point      |                                          Size |
-| ---------------- | --------------------------------------------: |
-| `/`              |                                        100 GB |
-| `/home`          |                                         10 GB |
-| `/tmp`           |                                         10 GB |
-| `/var`           |                                         20 GB |
-| `/var/log`       |                                         20 GB |
-| `/var/log/audit` |                                         10 GB |
-| `/u01`           | Remaining capacity (approximately **450 GB**) |
-
-### Purpose
-
-The server will host the **Nexus Repository OSS v3.93.2** UAT environment.
-
-The `/u01` filesystem will be used as the **initial Nexus blob store** for repository artifacts during installation, validation, and phased migration activities.
-
-At a later stage, a separate request will be raised to expand `/u01` to **4 TB**, with future scalability to **8 TB**, to support the complete production repository migration.
-
-No external PostgreSQL storage is required as part of this request, as the database will be provisioned separately on the centralized PostgreSQL platform.
-
+Thanks,
+Ibrahim
