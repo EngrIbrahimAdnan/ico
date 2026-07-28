@@ -1,15 +1,20 @@
-Hi [Digital Manager],
+Annual Leave Planning
 
-I hope you are doing well.
 
-As part of the Enterprise Services validation activities, the DAST configuration remains an outstanding dependency before security validation can proceed.
 
-At this stage, we have not received any update regarding the progress or expected completion of the DAST configuration from the Security team. Could you kindly advise on the current status and whether there are any blockers preventing this activity from progressing?
 
-Once the DAST configuration is completed, we will proceed with the remaining validation activities accordingly.
+Hi [Manager's Name],
 
-Thank you.
+I hope you're doing well.
 
-Regards,
+I recently received an email from HR regarding the annual leave policy, advising employees who have not yet scheduled at least two consecutive weeks of annual leave to coordinate with their direct manager and confirm their leave dates in line with the department's annual leave plan.
 
-[Your Name]
+I wanted to check with you on how you would like me to proceed, particularly in light of our recent discussion regarding the current workload and priorities surrounding the Core Banking System activities and the ongoing organisational changes.
+
+Could you please advise whether this is something we should now consider scheduling, or if there is a different approach you would prefer us to follow in order to remain aligned with both operational requirements and the annual leave policy?
+
+Thank you, and I look forward to your guidance.
+
+Kind regards,
+
+Ibrahim
