@@ -1,20 +1,14 @@
-Open Firewall Access from Bitbucket DR & Production Node 2 to Jenkins (Webhook Communication)
+Clarification of Ownership – Bitbucket DR HTTPS/SSL Configuration
 
 
 
 
-Enable Bitbucket webhook communication from the Bitbucket DR server and Production Node 2 to Jenkins for automated CI/CD pipeline triggering.
+Hi Team,
 
+As part of the Bitbucket DR commissioning, the certificate has been installed on the DR server. However, the Bitbucket URL continues to be presented as **"Not Secure"** in the browser.
 
+Could you please advise which team is responsible for configuring HTTPS/SSL for the Bitbucket application (e.g. web server/application configuration), or direct this request to the appropriate team?
 
+We would like to ensure the remaining DR activities are completed by the appropriate support team in line with the established ownership.
 
-As part of the Bitbucket High Availability (Production Node 2) and Disaster Recovery (DR) implementation, firewall access is required from the Bitbucket DR server and Bitbucket Production Node 2 to the Jenkins server.
-
-This connectivity is required to enable Bitbucket webhooks, allowing repository events (e.g., push and pull request activities) to trigger Jenkins pipelines as per the existing Production Node 1 configuration.
-
-Kindly open the required firewall access from:
-
-* Bitbucket Production Node 2 → Jenkins
-* Bitbucket DR Server → Jenkins
-
-using the same protocol and port(s) as the existing Bitbucket Production Node 1 to Jenkins communication.
+Thank you.
