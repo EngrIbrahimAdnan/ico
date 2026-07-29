@@ -1,20 +1,20 @@
-Annual Leave Planning
+**SCA Python Dependency Investigation Update**
 
+Reviewed the reported SCA findings related to Python dependencies (`djangocms-text`, `djangocms-versioning`, `requests-file`).
 
+**Findings:**
 
+* Confirmed the application repository contains `requirements.txt` with Python dependencies.
+* Confirmed the Jenkins build stage creates a Python virtual environment (`website-env`) and installs dependencies successfully using `pip install -r requirements.txt`.
+* Verified the installed Python packages are present in the Jenkins workspace under `website-env`.
+* Reviewed the generated Dependency-Check report; the reported Python packages were not found in the Jenkins-generated SCA report.
 
-Hi [Manager's Name],
+**Current Assessment:**
 
-I hope you're doing well.
+* Python dependencies are being prepared correctly during the build process.
+* Further validation is required to confirm whether the Dependency-Check scan configuration is analysing the Python environment/dependencies.
+* The manual Dependency-Check Docker command provided by Security appears to use a different execution method and requires comparison with the Jenkins scan configuration.
 
-I recently received an email from HR regarding the annual leave policy, advising employees who have not yet scheduled at least two consecutive weeks of annual leave to coordinate with their direct manager and confirm their leave dates in line with the department's annual leave plan.
+**Next Action:**
 
-I wanted to check with you on how you would like me to proceed, particularly in light of our recent discussion regarding the current workload and priorities surrounding the Core Banking System activities and the ongoing organisational changes.
-
-Could you please advise whether this is something we should now consider scheduling, or if there is a different approach you would prefer us to follow in order to remain aligned with both operational requirements and the annual leave policy?
-
-Thank you, and I look forward to your guidance.
-
-Kind regards,
-
-Ibrahim
+* Align with Security team to confirm the expected SCA scanning approach and compare the manual scan configuration against the Jenkins Dependency-Check implementation before making pipeline changes.
