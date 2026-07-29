@@ -1,17 +1,20 @@
-Hi [ISD Analyst],
+Open Firewall Access from Bitbucket DR & Production Node 2 to Jenkins (Webhook Communication)
 
-As part of the Bitbucket DR commissioning activities, we completed end-to-end testing of LDAP authentication.
 
-Following the previous firewall implementation on TCP/636 (LDAPS), authentication was unsuccessful despite further troubleshooting, including certificate renewal and validation.
 
-To verify the configuration, a temporary firewall rule was implemented using **TCP/389**, which matches the existing Bitbucket Production LDAP configuration (SSL/TLS disabled). Authentication was successful immediately after applying the temporary rule.
 
-Based on the testing completed, the DR environment requires the same LDAP connectivity as the current Production environment. This requirement also applies to the planned Bitbucket Production Node 2 deployment to ensure configuration consistency.
+Enable Bitbucket webhook communication from the Bitbucket DR server and Production Node 2 to Jenkins for automated CI/CD pipeline triggering.
 
-Kindly review and implement the firewall configuration to allow LDAP connectivity over **TCP/389**, in line with the existing Production configuration. A screenshot of the Production Bitbucket LDAP user directory configuration is attached for reference.
 
-Please let us know if any further information is required.
 
-Kind regards,
 
-Ibrahim
+As part of the Bitbucket High Availability (Production Node 2) and Disaster Recovery (DR) implementation, firewall access is required from the Bitbucket DR server and Bitbucket Production Node 2 to the Jenkins server.
+
+This connectivity is required to enable Bitbucket webhooks, allowing repository events (e.g., push and pull request activities) to trigger Jenkins pipelines as per the existing Production Node 1 configuration.
+
+Kindly open the required firewall access from:
+
+* Bitbucket Production Node 2 → Jenkins
+* Bitbucket DR Server → Jenkins
+
+using the same protocol and port(s) as the existing Bitbucket Production Node 1 to Jenkins communication.
