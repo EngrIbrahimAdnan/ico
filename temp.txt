@@ -1,20 +1,17 @@
-**SCA Python Dependency Investigation Update**
+Hi [ISD Analyst],
 
-Reviewed the reported SCA findings related to Python dependencies (`djangocms-text`, `djangocms-versioning`, `requests-file`).
+As part of the Bitbucket DR commissioning activities, we completed end-to-end testing of LDAP authentication.
 
-**Findings:**
+Following the previous firewall implementation on TCP/636 (LDAPS), authentication was unsuccessful despite further troubleshooting, including certificate renewal and validation.
 
-* Confirmed the application repository contains `requirements.txt` with Python dependencies.
-* Confirmed the Jenkins build stage creates a Python virtual environment (`website-env`) and installs dependencies successfully using `pip install -r requirements.txt`.
-* Verified the installed Python packages are present in the Jenkins workspace under `website-env`.
-* Reviewed the generated Dependency-Check report; the reported Python packages were not found in the Jenkins-generated SCA report.
+To verify the configuration, a temporary firewall rule was implemented using **TCP/389**, which matches the existing Bitbucket Production LDAP configuration (SSL/TLS disabled). Authentication was successful immediately after applying the temporary rule.
 
-**Current Assessment:**
+Based on the testing completed, the DR environment requires the same LDAP connectivity as the current Production environment. This requirement also applies to the planned Bitbucket Production Node 2 deployment to ensure configuration consistency.
 
-* Python dependencies are being prepared correctly during the build process.
-* Further validation is required to confirm whether the Dependency-Check scan configuration is analysing the Python environment/dependencies.
-* The manual Dependency-Check Docker command provided by Security appears to use a different execution method and requires comparison with the Jenkins scan configuration.
+Kindly review and implement the firewall configuration to allow LDAP connectivity over **TCP/389**, in line with the existing Production configuration. A screenshot of the Production Bitbucket LDAP user directory configuration is attached for reference.
 
-**Next Action:**
+Please let us know if any further information is required.
 
-* Align with Security team to confirm the expected SCA scanning approach and compare the manual scan configuration against the Jenkins Dependency-Check implementation before making pipeline changes.
+Kind regards,
+
+Ibrahim
