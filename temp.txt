@@ -1,10 +1,1 @@
-IBM Support Account Approval Required for UCD Support Ticket
-
-
-
-
-Hi [Manager],
-
-While preparing to raise an IBM UrbanCode Deploy support ticket regarding the Entra ID implementation, I found that although the primary administrator has granted my access request, my IBM Support account still requires approval before I can submit tickets.
-
-As the remaining approval appears to be with the Executive Manager of Vendor Management, kindly advise whether you would prefer to raise this with him, or if you would like me to contact him directly.
+Created an IBM Support account and raised a support ticket to clarify the current UCD UAT licensing status. The UAT environment is displaying an expired evaluation license, which may impact planned Entra ID testing. The ticket requests confirmation of the existing license and guidance on obtaining an extension or replacement, if required. Awaiting IBM Support's response before proceeding further.
