@@ -1,1 +1,9 @@
-Created an IBM Support account and raised a support ticket to clarify the current UCD UAT licensing status. The UAT environment is displaying an expired evaluation license, which may impact planned Entra ID testing. The ticket requests confirmation of the existing license and guidance on obtaining an extension or replacement, if required. Awaiting IBM Support's response before proceeding further.
+**Progress Update:**
+
+As part of the Bitbucket DR commissioning activities, the HTTPS/SSL configuration was reviewed following successful application deployment and authentication testing.
+
+A separate Jira ticket (**[JIRA-XXXX]**) was raised with the OS team to address the browser reporting the Bitbucket DR URL as **"Not Secure"**. The ticket was subsequently closed as being outside the Linux team's scope.
+
+At present, the ownership for configuring HTTPS/SSL for the Bitbucket DR application remains to be clarified before the activity can proceed. The related Jira ticket has been linked for traceability.
+
+**Linked Ticket:** JIRA-XXXX
