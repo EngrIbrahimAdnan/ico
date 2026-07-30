@@ -1,21 +1,10 @@
-Request for UCD UAT Trial License Renewal/Replacement for Entra ID Testing
+IBM Support Account Approval Required for UCD Support Ticket
 
 
 
 
+Hi [Manager],
 
+While preparing to raise an IBM UrbanCode Deploy support ticket regarding the Entra ID implementation, I found that although the primary administrator has granted my access request, my IBM Support account still requires approval before I can submit tickets.
 
-
-
-We are preparing to implement Microsoft Entra ID authentication on our IBM UrbanCode Deploy (UCD) production environment. To avoid impacting production, we previously created a separate UAT environment for validation and testing.
-
-The UAT environment appears to have been using a trial/evaluation license, which has now expired. A red banner is displayed on the UAT homepage indicating that the evaluation license has expired. This environment was originally handed over by a colleague who has since left the organisation, so we are unable to confirm the licensing details.
-
-Could you please:
-
-* Confirm whether the UAT environment was provisioned with a trial/evaluation license.
-* Advise whether the trial license can be extended or provide a replacement license suitable for UAT testing.
-* Let us know if any additional information (such as the server ID or current license details) is required to facilitate this request.
-
-Our objective is to complete Entra ID integration and validation in UAT before proceeding with the production implementation.
-
+As the remaining approval appears to be with the Executive Manager of Vendor Management, kindly advise whether you would prefer to raise this with him, or if you would like me to contact him directly.
