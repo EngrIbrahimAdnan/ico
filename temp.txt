@@ -1,14 +1,21 @@
-Clarification of Ownership – Bitbucket DR HTTPS/SSL Configuration
+Request for UCD UAT Trial License Renewal/Replacement for Entra ID Testing
 
 
 
 
-Hi Team,
 
-As part of the Bitbucket DR commissioning, the certificate has been installed on the DR server. However, the Bitbucket URL continues to be presented as **"Not Secure"** in the browser.
 
-Could you please advise which team is responsible for configuring HTTPS/SSL for the Bitbucket application (e.g. web server/application configuration), or direct this request to the appropriate team?
 
-We would like to ensure the remaining DR activities are completed by the appropriate support team in line with the established ownership.
 
-Thank you.
+We are preparing to implement Microsoft Entra ID authentication on our IBM UrbanCode Deploy (UCD) production environment. To avoid impacting production, we previously created a separate UAT environment for validation and testing.
+
+The UAT environment appears to have been using a trial/evaluation license, which has now expired. A red banner is displayed on the UAT homepage indicating that the evaluation license has expired. This environment was originally handed over by a colleague who has since left the organisation, so we are unable to confirm the licensing details.
+
+Could you please:
+
+* Confirm whether the UAT environment was provisioned with a trial/evaluation license.
+* Advise whether the trial license can be extended or provide a replacement license suitable for UAT testing.
+* Let us know if any additional information (such as the server ID or current license details) is required to facilitate this request.
+
+Our objective is to complete Entra ID integration and validation in UAT before proceeding with the production implementation.
+
