@@ -1,17 +1,25 @@
-Hi Team,
+Summary
 
-During validation of the Enterprise Services modules, we identified that four application SAST projects are currently not present in Checkmarx. This was verified directly within the Checkmarx portal after investigating repeated pipeline failures during the SAST stage.
+Provision PostgreSQL Database for Nexus Repository OSS v3.93.2 UAT
 
-Our records indicate that SAST validation was successfully completed during the QA validation phase for the affected applications. However, during the current Pre-Production validation, the corresponding SAST projects are no longer available in Checkmarx, preventing SAST validation from being completed for these modules.
+Description
 
-Could you kindly confirm whether this was an intentional administrative action (for example, as part of a project cleanup), or whether further investigation is required to determine why these projects are no longer present?
+Please provision a PostgreSQL database for the new Nexus Repository OSS v3.93.2 UAT environment.
 
-As SAST is a mandatory security validation activity prior to deployment, the affected projects will need to be restored or recreated before end-to-end validation can be completed. Understanding the reason for their absence will also help prevent similar occurrences in the future.
+Purpose:
 
-Should anyone have additional information regarding the current status or administrative history of these projects, kindly let us know so we can update our assessment and proceed accordingly.
+Backend database for Nexus Repository OSS v3.93.2
+UAT environment, with planned promotion to Production following successful validation
 
-Thank you.
+Platform:
 
-Regards,
+PostgreSQL 16.6 (Centralized PostgreSQL Platform)
+RHEL 9.x
 
-[Your Name]
+Notes:
+
+Repository artifacts (blob store) will reside on the Nexus application server (/u01).
+The PostgreSQL database will store Nexus application data (repository metadata, configuration, users, roles, and related information).
+Kindly provision the database and size it according to DBA best practices for this application workload.
+
+This is concise, gives them the information they need, and leaves the database sizing decision with the DBAs, where it belongs.
