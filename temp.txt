@@ -1,9 +1,17 @@
-**Progress Update:**
+Hi Team,
 
-As part of the Bitbucket DR commissioning activities, the HTTPS/SSL configuration was reviewed following successful application deployment and authentication testing.
+During validation of the Enterprise Services modules, we identified that four application SAST projects are currently not present in Checkmarx. This was verified directly within the Checkmarx portal after investigating repeated pipeline failures during the SAST stage.
 
-A separate Jira ticket (**[JIRA-XXXX]**) was raised with the OS team to address the browser reporting the Bitbucket DR URL as **"Not Secure"**. The ticket was subsequently closed as being outside the Linux team's scope.
+Our records indicate that SAST validation was successfully completed during the QA validation phase for the affected applications. However, during the current Pre-Production validation, the corresponding SAST projects are no longer available in Checkmarx, preventing SAST validation from being completed for these modules.
 
-At present, the ownership for configuring HTTPS/SSL for the Bitbucket DR application remains to be clarified before the activity can proceed. The related Jira ticket has been linked for traceability.
+Could you kindly confirm whether this was an intentional administrative action (for example, as part of a project cleanup), or whether further investigation is required to determine why these projects are no longer present?
 
-**Linked Ticket:** JIRA-XXXX
+As SAST is a mandatory security validation activity prior to deployment, the affected projects will need to be restored or recreated before end-to-end validation can be completed. Understanding the reason for their absence will also help prevent similar occurrences in the future.
+
+Should anyone have additional information regarding the current status or administrative history of these projects, kindly let us know so we can update our assessment and proceed accordingly.
+
+Thank you.
+
+Regards,
+
+[Your Name]
