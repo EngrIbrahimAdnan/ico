@@ -1,9 +1,7 @@
 Thank you for your email.
 
-From an operational perspective, application upgrades should continue to follow the standard change management process and be implemented under an approved CAB.
+With regard to Acunetix application upgrades, my recommendation is that these continue to be managed through the standard change management process rather than enabling automatic installation.
 
-Unlike signature or vulnerability database updates, application upgrades involve changes to the application itself and may require service downtime, pre-change validation, and a system snapshot or backup to provide a rollback option should any issues arise during the upgrade.
+Application upgrades require a planned maintenance window, an approved CAB, and a system snapshot prior to implementation to provide a rollback option should any issues be encountered during the upgrade. In addition, advance communication with the development teams is required to avoid disruption to any planned development or scanning activities.
 
-Executing application upgrades without formal change approval and stakeholder communication could introduce unplanned service disruptions, particularly if development or security teams have scheduled scanning activities during the maintenance window.
-
-If the intention is to automate vulnerability database/signature updates rather than application upgrades, we can review the vendor's supported approach and assess whether it aligns with our operational and change management requirements.
+To ensure the platform remains up to date, we will continue to perform regular checks for new Acunetix releases. When a new version becomes available, we will plan and schedule the upgrade through the normal change management process, ensuring all required stakeholders are informed prior to implementation.
