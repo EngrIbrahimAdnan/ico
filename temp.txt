@@ -1,9 +1,9 @@
-Hi [Manager's Name],
+Following the recent Acunetix upgrade, I verified the application version to confirm whether any further product updates are required.
 
-Regarding the SCA issue where Python packages are not being scanned in the pipeline, I believe it may be beneficial to have it reassigned for a fresh investigation. A different perspective may help identify the root cause more efficiently and move the issue forward, as it is currently delaying developer deployments.
+The verification included:
 
-With the current workload across Nexus upgrade, Bitbucket DR and Production Node 2, UCD database migration, and Enterprise Services, I believe this approach would allow the investigation to receive the attention it deserves while I continue progressing the ongoing high-priority initiatives.
+* The Acunetix GUI, which reports that the application is using the latest available version.
+* A manual update check from the GUI, which completed successfully and confirmed that no updates are available.
+* Backend application logs, which show successful communication with the Acunetix update service and a response indicating that the current installed build (25.11.251107123) is already the latest available version for this installation (`update: false`).
 
-Kind regards,
-
-Ibrahim
+Based on the above verification, no additional Acunetix application upgrade is currently required.
