@@ -1,25 +1,8 @@
-Bitbucket DR – HTTPS Certificate SAN Mismatch
+**Progress Update:**
 
-
-As part of the Bitbucket DR commissioning activities, the DR instance is accessible over HTTPS; however, the browser reports the connection as "Not Secure."
-
-Investigation confirmed that Bitbucket is presenting a certificate whose Subject Alternative Name (SAN) contains the Production hostname, resulting in a hostname mismatch when accessing the DR URL.
-
-Kindly issue a certificate for the Bitbucket DR hostname (or advise on the appropriate certificate) so it can be configured on the DR server to complete the remaining DR commissioning activities.
-
-This activity is currently blocking the completion of the Bitbucket DR implementation.
-
-
-
-
-Assistance Required – Bitbucket DR HTTPS Certificate (Jira: <Ticket-ID>)
-
-Hi Team,
-
-A Jira ticket (<Ticket-ID>) has been raised regarding the remaining blocker for the Bitbucket DR commissioning activities.
-
-Following investigation, we confirmed that the Bitbucket DR server is presenting a certificate whose Subject Alternative Name (SAN) contains the Production hostname, resulting in the browser reporting the DR URL as "Not Secure."
-
-Could you please assist by reviewing the attached ticket and issuing the appropriate certificate for the Bitbucket DR hostname (or advise on the appropriate certificate) so we can complete the DR implementation.
-
-Thank you.
+* Validated firewall connectivity between the Bitbucket DR server and the Production database, resolving the initial application startup issue.
+* Confirmed successful startup of the Bitbucket DR application and verified access to the login page.
+* Investigated LDAP authentication and validated that the Production environment uses LDAP over TCP/389 (SSL/TLS disabled). Following implementation of a temporary firewall rule on TCP/389, LDAP authentication was successfully validated on the DR environment.
+* Identified an HTTPS certificate issue whereby the Bitbucket DR server presents a certificate containing the Production hostname under the Subject Alternative Name (SAN), resulting in the browser reporting the DR URL as **"Not Secure."**
+* Performed analysis of the Bitbucket HTTPS configuration and confirmed the issue is related to the certificate presented by the DR server.
+* Engaged the relevant support team to request the appropriate HTTPS certificate for the Bitbucket DR hostname. This is the remaining blocker to completing the Bitbucket DR commissioning activities.
