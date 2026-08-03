@@ -1,7 +1,25 @@
-Thank you for your email.
+Bitbucket DR – HTTPS Certificate SAN Mismatch
 
-With regard to Acunetix application upgrades, my recommendation is that these continue to be managed through the standard change management process rather than enabling automatic installation.
 
-Application upgrades require a planned maintenance window, an approved CAB, and a system snapshot prior to implementation to provide a rollback option should any issues be encountered during the upgrade. In addition, advance communication with the development teams is required to avoid disruption to any planned development or scanning activities.
+As part of the Bitbucket DR commissioning activities, the DR instance is accessible over HTTPS; however, the browser reports the connection as "Not Secure."
 
-To ensure the platform remains up to date, we will continue to perform regular checks for new Acunetix releases. When a new version becomes available, we will plan and schedule the upgrade through the normal change management process, ensuring all required stakeholders are informed prior to implementation.
+Investigation confirmed that Bitbucket is presenting a certificate whose Subject Alternative Name (SAN) contains the Production hostname, resulting in a hostname mismatch when accessing the DR URL.
+
+Kindly issue a certificate for the Bitbucket DR hostname (or advise on the appropriate certificate) so it can be configured on the DR server to complete the remaining DR commissioning activities.
+
+This activity is currently blocking the completion of the Bitbucket DR implementation.
+
+
+
+
+Assistance Required – Bitbucket DR HTTPS Certificate (Jira: <Ticket-ID>)
+
+Hi Team,
+
+A Jira ticket (<Ticket-ID>) has been raised regarding the remaining blocker for the Bitbucket DR commissioning activities.
+
+Following investigation, we confirmed that the Bitbucket DR server is presenting a certificate whose Subject Alternative Name (SAN) contains the Production hostname, resulting in the browser reporting the DR URL as "Not Secure."
+
+Could you please assist by reviewing the attached ticket and issuing the appropriate certificate for the Bitbucket DR hostname (or advise on the appropriate certificate) so we can complete the DR implementation.
+
+Thank you.
