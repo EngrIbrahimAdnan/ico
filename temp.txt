@@ -1,9 +1,9 @@
-Following the recent Acunetix upgrade, I verified the application version to confirm whether any further product updates are required.
+Thank you for your email.
 
-The verification included:
+From an operational perspective, application upgrades should continue to follow the standard change management process and be implemented under an approved CAB.
 
-* The Acunetix GUI, which reports that the application is using the latest available version.
-* A manual update check from the GUI, which completed successfully and confirmed that no updates are available.
-* Backend application logs, which show successful communication with the Acunetix update service and a response indicating that the current installed build (25.11.251107123) is already the latest available version for this installation (`update: false`).
+Unlike signature or vulnerability database updates, application upgrades involve changes to the application itself and may require service downtime, pre-change validation, and a system snapshot or backup to provide a rollback option should any issues arise during the upgrade.
 
-Based on the above verification, no additional Acunetix application upgrade is currently required.
+Executing application upgrades without formal change approval and stakeholder communication could introduce unplanned service disruptions, particularly if development or security teams have scheduled scanning activities during the maintenance window.
+
+If the intention is to automate vulnerability database/signature updates rather than application upgrades, we can review the vendor's supported approach and assess whether it aligns with our operational and change management requirements.
