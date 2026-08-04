@@ -1,9 +1,19 @@
-Hi Team,
+Hi [Manager],
 
-As part of our investigation, we compared the behavior between the Pre-Production and Production environments.
+I would like to seek your guidance regarding the Development and ISD dependency sub-tasks created under the Enterprise Services activity.
 
-During validation, we observed that the `curl` request executed against the Production Deployment Manager returned `null` values for both the authentication token and deployment ID. The same request executed against the Pre-Production Deployment Manager returned valid values for both fields.
+As discussed previously, I understand these sub-tasks remain under our ownership for tracking purposes rather than representing Development or ISD deliverables from a KPI perspective.
 
-This difference has been identified as part of the ongoing investigation, and we are continuing to determine why the expected values are not being returned in the Production environment. We will provide a further update once additional findings are available.
+Since the Development team has reassigned the Development dependency sub-tasks back to me, I would like to confirm the preferred approach going forward. Would you like me to:
 
-Kind regards,
+* keep the sub-tasks open and continue updating them as tracking items;
+* close them once the corresponding dependency has been communicated; or
+* manage them in another manner that better aligns with our Jira process?
+
+My objective is to ensure the tickets continue to provide clear visibility of the outstanding dependencies while remaining consistent with the intended workflow.
+
+Please let me know your preferred approach, and I'll align the tracking accordingly.
+
+Regards,
+
+[Your Name]
