@@ -1,4 +1,9 @@
+Hi Team,
 
-The UCD UAT environment has been reviewed and confirmed to support OpenID Connect (OIDC) authentication for Microsoft Entra ID integration. The required OIDC configuration fields have been identified, and a separate ticket has been raised and assigned to the OS/Identity team to create/configure the Microsoft Entra ID application and provide the required OIDC parameters (Client ID, Client Secret, Issuer, endpoints, claims, and scopes).
+As part of our investigation, we compared the behavior between the Pre-Production and Production environments.
 
-Progress is currently pending completion of the Entra ID configuration from the assigned team. Once the requested details are provided, UCD configuration and end-to-end authentication testing in UAT will proceed.
+During validation, we observed that the `curl` request executed against the Production Deployment Manager returned `null` values for both the authentication token and deployment ID. The same request executed against the Pre-Production Deployment Manager returned valid values for both fields.
+
+This difference has been identified as part of the ongoing investigation, and we are continuing to determine why the expected values are not being returned in the Production environment. We will provide a further update once additional findings are available.
+
+Kind regards,
