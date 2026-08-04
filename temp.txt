@@ -1,39 +1,4 @@
-**Configure Microsoft Entra ID (OIDC) Application for IBM DevOps Deploy (UAT)**
 
+The UCD UAT environment has been reviewed and confirmed to support OpenID Connect (OIDC) authentication for Microsoft Entra ID integration. The required OIDC configuration fields have been identified, and a separate ticket has been raised and assigned to the OS/Identity team to create/configure the Microsoft Entra ID application and provide the required OIDC parameters (Client ID, Client Secret, Issuer, endpoints, claims, and scopes).
 
-### Objective
-
-Configure Microsoft Entra ID (OpenID Connect) integration for the IBM DevOps Deploy (UCD) UAT environment by creating the required application registration and providing the OIDC configuration details.
-
-### Required Information
-
-Please create/configure the Microsoft Entra ID application for UCD UAT and provide the following:
-
-* Client ID
-* Client Secret
-* Issuer URL
-* JWKS URI
-* Authorization Endpoint
-* Token Endpoint
-* UserInfo Endpoint
-* End Session Endpoint
-
-### Token Claims
-
-Please confirm or configure the following standard claims (or advise if different values are required by our organization):
-
-* Username Claim: `preferred_username`
-* Name Claim: `name`
-* Email Claim: `email`
-
-### Scopes
-
-Please confirm the application supports the following scopes:
-
-* `openid`
-* `profile`
-* `email`
-
-### Notes
-
-These values will be used to configure the OpenID Connect authentication realm within the IBM DevOps Deploy UAT environment. If additional configuration is required on the Entra ID side (such as redirect/callback URIs, application permissions, or claim mappings), kindly provide the necessary details.
+Progress is currently pending completion of the Entra ID configuration from the assigned team. Once the requested details are provided, UCD configuration and end-to-end authentication testing in UAT will proceed.
