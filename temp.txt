@@ -1,22 +1,13 @@
-Subject: Follow-up: UAT Server Provisioning for Nexus Repository Upgrade
+Implement Daily Automated Backup for Bitbucket Server
 
 
-Hi Team,
 
-I hope you're doing well.
 
-I am following up regarding the UAT server provisioning request for the Nexus Repository OSS v3.93.2 environment.
+Configure automated daily backups for the Bitbucket server. Bitbucket hosts the organization's developers' source code, making it a critical application that requires regular backups to support business continuity and disaster recovery.
 
-The PostgreSQL database has now been provisioned, and we are currently awaiting the UAT server to proceed with the Nexus installation, configuration, and validation activities.
+Requirements:
 
-This environment is required to support the planned Nexus upgrade, including the introduction of Swift Package Manager (SPM) support for the development teams, which is not available on the current Nexus version.
-
-Could you please provide an update on the current status of the server provisioning and, if available, the expected timeline for completion?
-
-If any further information or action is required from our side, please let us know.
-
-Thank you, and we look forward to your update.
-
-Kind regards,
-
-<Your Name>
+Schedule automated daily backups.
+Ensure repositories, configuration, and application data are included.
+Store backups securely in accordance with the organization's retention policy.
+Periodically validate backup integrity and restoration.
