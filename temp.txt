@@ -1,13 +1,14 @@
-Implement Daily Automated Backup for Bitbucket Server
+Update on UCD UAT Entra ID Integration
 
 
 
 
-Configure automated daily backups for the Bitbucket server. Bitbucket hosts the organization's developers' source code, making it a critical application that requires regular backups to support business continuity and disaster recovery.
+Hi [Manager],
 
-Requirements:
+I spoke with the engineer responsible for the Microsoft Entra ID configuration for UCD UAT. Due to current resource constraints, he advised that he plans to work on it next week.
 
-Schedule automated daily backups.
-Ensure repositories, configuration, and application data are included.
-Store backups securely in accordance with the organization's retention policy.
-Periodically validate backup integrity and restoration.
+As this is a prerequisite for the UCD authentication configuration and testing, our progress is currently pending this dependency.
+
+Please let me know if you would like to leave the current timeline as is or escalate the request.
+
+Thank you.
