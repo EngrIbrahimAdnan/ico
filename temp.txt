@@ -1,7 +1,7 @@
-**Update:**
+Hi [Engineer],
 
-Progress is currently dependent on the OSM team to complete the Microsoft Entra ID configuration required for UCD UAT OpenID Connect (OIDC) integration.
+As discussed, the Microsoft Entra ID configuration required for the UCD UAT OpenID Connect (OIDC) integration is planned to be carried out next week, subject to resource availability.
 
-As communicated by the assigned engineer, the activity is planned to start next week, with an expected completion by the end of next week, subject to resource availability.
+Our UCD configuration and authentication testing will proceed once the Entra ID application has been configured and the required OIDC details are available.
 
-Once the Entra ID configuration is completed and the required OIDC parameters are provided, UCD configuration and authentication testing will proceed.
+Thank you.
