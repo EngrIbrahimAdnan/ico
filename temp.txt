@@ -1,14 +1,7 @@
-Subject: Follow-up: Proxy Approval Required – Nexus Repository UAT
-
 Hi Team,
 
-I am following up on the proxy access request submitted for the Nexus Repository UAT environment.
+Kindly provide your approval for access to the requested URL, which is required to download the Nexus Repository installation package and proceed with preparing the latest Nexus version.
 
-The access is required to download the Nexus installation package and proceed with the UAT setup, which is needed to support the development team's Swift Package Manager (SPM) requirements, as the current Nexus version does not support this functionality.
+Your kind approval is appreciated.
 
-We would appreciate your kind review and approval to allow us to proceed.
-
-Thank you for your support.
-
-Kind regards,
-<Your Name>
+Thank you.
