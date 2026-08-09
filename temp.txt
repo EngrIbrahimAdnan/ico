@@ -1,7 +1,1 @@
-Hi [Engineer],
-
-As discussed, the Microsoft Entra ID configuration required for the UCD UAT OpenID Connect (OIDC) integration is planned to be carried out next week, subject to resource availability.
-
-Our UCD configuration and authentication testing will proceed once the Entra ID application has been configured and the required OIDC details are available.
-
-Thank you.
+Update: JDK 17 has been installed on the UAT server. Access to the Nexus Repository download URL is currently blocked, and a proxy access request has been submitted. Once access is granted and the Nexus package is downloaded, it will be transferred to the server and extracted to proceed with the installation.
