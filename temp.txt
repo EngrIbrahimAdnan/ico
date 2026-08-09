@@ -1,7 +1,23 @@
-Hi Team,
+Provision 1 TB NFS Storage for Bitbucket DR Shared Home
 
-Kindly provide your approval for access to the requested URL, which is required to download the Nexus Repository installation package and proceed with preparing the latest Nexus version.
 
-Your kind approval is appreciated.
 
-Thank you.
+**Purpose:**
+Provision 1 TB NFS storage for the Bitbucket DR environment to host the Bitbucket shared home data as part of the DR implementation.
+
+**Requirement:**
+The current Bitbucket DR shared home is located under:
+
+`/u01/Atlassian/home/stash/shared`
+
+The current storage consumption is approximately **350 GB**, primarily consisting of:
+
+* `shared/data` – 333 GB
+* `shared/shared/search` – 16 GB
+* Remaining shared directories – <1 GB
+
+A **1 TB NFS** is requested to accommodate the existing data and provide sufficient capacity for future repository growth.
+
+Kindly provision the NFS storage and provide the required mount/export details and access for the Bitbucket DR server.
+
+The NFS will initially be implemented and validated on the DR environment. Production integration will be addressed separately following successful DR validation.
