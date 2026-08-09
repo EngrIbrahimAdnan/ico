@@ -1,1 +1,14 @@
-Update: JDK 17 has been installed on the UAT server. Access to the Nexus Repository download URL is currently blocked, and a proxy access request has been submitted. Once access is granted and the Nexus package is downloaded, it will be transferred to the server and extracted to proceed with the installation.
+Subject: Follow-up: Proxy Approval Required – Nexus Repository UAT
+
+Hi Team,
+
+I am following up on the proxy access request submitted for the Nexus Repository UAT environment.
+
+The access is required to download the Nexus installation package and proceed with the UAT setup, which is needed to support the development team's Swift Package Manager (SPM) requirements, as the current Nexus version does not support this functionality.
+
+We would appreciate your kind review and approval to allow us to proceed.
+
+Thank you for your support.
+
+Kind regards,
+<Your Name>
