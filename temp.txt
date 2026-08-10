@@ -1,15 +1,8 @@
-Hi [Manager],
+**Progress Update:**
 
-Following today's discussion with Development and Security, I wanted to highlight a SAST dependency affecting the Enterprise Services modules.
-
-Currently, **four modules are pending SAST onboarding in Checkmarx**, with the possibility of additional modules requiring onboarding as we continue testing. Checkmarx has reached its current license capacity.
-
-At the same time, there is an ongoing transition towards SonarQube. Based on the latest update from [Colleague/Architect], the licensing cycle is expected to begin next month, **provided everything progresses without delays**.
-
-Development and Security are currently seeking clarity on how SAST coverage will be handled for the four affected modules and any additional modules going forward.
-
-Could you kindly advise how you would like us to proceed regarding the Checkmarx/SonarQube dependency? I would like to align the teams accordingly and avoid any ambiguity around the SAST coverage for the remaining Enterprise Services.
-
-Regards,
-
-[Your Name]
+* Completed initial Bitbucket DR server commissioning and resolved the application startup and database connectivity issues.
+* Validated LDAP authentication and confirmed connectivity using the same LDAP configuration as Production.
+* Identified and addressed the DR HTTPS certificate issue; the remaining certificate activity is being coordinated with the relevant support team.
+* Reviewed the Bitbucket shared storage requirements. Current shared data is approximately 350 GB.
+* **Pending:** Provisioning of **1 TB NFS storage** to be shared between the Bitbucket Production and DR servers for the shared repository data.
+* Following NFS provisioning, DR configuration and validation will proceed before implementing the shared storage configuration on Production.
