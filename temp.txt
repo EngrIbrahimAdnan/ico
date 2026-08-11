@@ -1,8 +1,11 @@
-**Progress Update:**
+Firewall Access – Bitbucket DR to NFS Server
 
-* Completed initial Bitbucket DR server commissioning and resolved the application startup and database connectivity issues.
-* Validated LDAP authentication and confirmed connectivity using the same LDAP configuration as Production.
-* Identified and addressed the DR HTTPS certificate issue; the remaining certificate activity is being coordinated with the relevant support team.
-* Reviewed the Bitbucket shared storage requirements. Current shared data is approximately 350 GB.
-* **Pending:** Provisioning of **1 TB NFS storage** to be shared between the Bitbucket Production and DR servers for the shared repository data.
-* Following NFS provisioning, DR configuration and validation will proceed before implementing the shared storage configuration on Production.
+**Purpose:** Enable NFS connectivity from the Bitbucket DR server to the newly provisioned NFS server.
+
+**Source:** Bitbucket DR server
+**Destination:** NFS server
+**NFS Export:** `/bitbkt-nfs`
+
+Connectivity testing from the DR server to the NFS server on TCP/2049 currently returns **"No route to host"**.
+
+Kindly enable the required network/firewall access to allow the DR server to mount the NFS export.
