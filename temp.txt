@@ -1,20 +1,17 @@
-Nexus UAT – PostgreSQL Connection / pg_hba.conf Configuration
+**Update:**
 
+Nexus Repository 3.95.0-07 has been installed on the new UAT server and configured to use the commissioned PostgreSQL database.
 
+* Nexus bundled Temurin/OpenJDK 21.x has been confirmed and is being used by Nexus.
+* Nexus service account and file ownership have been configured.
+* PostgreSQL connection details have been configured in `nexus-store.properties`.
+* Network connectivity from the Nexus server to PostgreSQL on TCP/5432 was successfully verified.
+* During Nexus startup, PostgreSQL rejected the connection with:
 
-Hi Team,
+  ```text
+  FATAL: no pg_hba.conf entry for host "<NEXUS_SERVER_IP>", user "<DB_USERNAME>", database "<DB_NAME>", no encryption
+  ```
+* This indicates the connection is reaching PostgreSQL, but the Nexus server/user/database combination is not currently permitted by PostgreSQL host-based authentication.
+* DBA team has been contacted to confirm/update the required PostgreSQL `pg_hba.conf` configuration and advise on the required SSL/encryption configuration.
 
-We are currently configuring the new Nexus UAT server to connect to the commissioned PostgreSQL database.
-
-Network connectivity to the PostgreSQL server on port 5432 is successful; however, Nexus is receiving the following error when attempting to establish the database connection:
-
-```text
-FATAL: no pg_hba.conf entry for host "<NEXUS_SERVER_IP>", user "<DB_USERNAME>", database "<DB_NAME>", no encryption
-```
-
-Could you please confirm whether the Nexus UAT server IP/user/database combination has been permitted in the PostgreSQL `pg_hba.conf` configuration, and advise if any additional PostgreSQL-side configuration is required?
-
-Also, please confirm whether the connection is expected to use SSL/encryption according to the PostgreSQL platform standard.
-
-Regards,
-Ibrahim
+**Current Status:** Pending DBA confirmation/configuration before proceeding with Nexus startup validation.
