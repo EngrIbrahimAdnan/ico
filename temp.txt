@@ -1,11 +1,19 @@
-Firewall Access – Bitbucket DR to NFS Server
+Hi,
 
-**Purpose:** Enable NFS connectivity from the Bitbucket DR server to the newly provisioned NFS server.
+Just a quick update on the Nexus Repository upgrade and UAT server provisioning.
 
-**Source:** Bitbucket DR server
-**Destination:** NFS server
-**NFS Export:** `/bitbkt-nfs`
+The new UAT Nexus server has now been provisioned with the required OS resources, and the PostgreSQL 16.6 database has also been commissioned.
 
-Connectivity testing from the DR server to the NFS server on TCP/2049 currently returns **"No route to host"**.
+Current progress:
 
-Kindly enable the required network/firewall access to allow the DR server to mount the NFS export.
+* Nexus Repository 3.95.0-07 package has been downloaded and extracted on the UAT server.
+* Nexus has been configured to use its bundled Temurin/OpenJDK 21 runtime.
+* Dedicated `nexus` service account has been created and ownership configured.
+* Network connectivity from the Nexus server to PostgreSQL over TCP 5432 has been verified successfully.
+* Required network/proxy access for obtaining the Nexus package has been completed.
+* We are currently configuring the Nexus PostgreSQL connection prior to the initial application startup.
+
+Once the initial startup is completed successfully, we will proceed with UAT validation and repository configuration/migration activities.
+
+Regards,
+Ibrahim
