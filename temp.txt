@@ -1,1 +1,16 @@
-The activity requires additional time due to the production-only nature of the UCD environment and the absence of a dedicated UAT environment for Entra ID validation. As the integration will directly affect production authentication, the configuration and associated authentication/redirect flows require careful validation to ensure there is no impact to existing UCD access or authentication mechanisms. Additional consideration is also required around the production configuration, rollback approach, and coordination of the required changes before implementation.
+Configure Microsoft Entra ID Integration for UCD Production
+
+
+Description
+
+Implement Microsoft Entra ID integration with the UCD production environment to enable centralized authentication.
+
+The activity includes:
+
+Configure the required UCD OpenID Connect/Entra ID parameters.
+Coordinate the required Entra ID application configuration and UCD URI/redirect details.
+Validate authentication and access flows in the production environment.
+Confirm existing UCD access remains unaffected following the integration.
+Document the final configuration and implementation outcome.
+
+Note: UCD is production-only for this integration, with no dedicated UAT environment available for Entra ID validation; therefore, production changes require controlled implementation and validation.
