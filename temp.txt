@@ -1,5 +1,1 @@
-Update:
-
-The upgrade has required additional time due to sequential infrastructure dependencies, including UAT server provisioning, PostgreSQL commissioning, firewall/proxy access, and database authentication configuration. Initial Nexus startup also required troubleshooting of the PostgreSQL connectivity and host-based authentication configuration.
-
-These dependencies have now been resolved, and Nexus 3.95.0-07 is successfully running on UAT with PostgreSQL and accessible from the VDI. Current activities are focused on final UAT configuration, log validation, and repository/blob storage validation before proceeding with the controlled migration.
+The activity requires additional time due to the production-only nature of the UCD environment and the absence of a dedicated UAT environment for Entra ID validation. As the integration will directly affect production authentication, the configuration and associated authentication/redirect flows require careful validation to ensure there is no impact to existing UCD access or authentication mechanisms. Additional consideration is also required around the production configuration, rollback approach, and coordination of the required changes before implementation.
