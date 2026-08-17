@@ -1,3 +1,5 @@
-DevSecOps activities for the Enterprise Services have been completed. Closure is currently pending Security activities for DAST target configuration/scanning through Acunetix and SAST coverage for the remaining modules, either through Checkmarx following license renewal or the planned SonarQube implementation.
+**Overdue Justification:**
 
-The ticket therefore remains open pending completion of these Security dependencies.
+DR and Production Node 2 onboarding is taking longer due to additional validation required around the shared Bitbucket database and configuration. During testing, the DR and Production Node 1 Base URL configuration became interlinked, resulting in an incorrect URL/certificate presentation and temporary impact to developers.
+
+Additional validation is therefore being performed to ensure the DR and Node 2 configurations remain isolated where required and that shared components, including NFS storage, are onboarded safely without impacting the Production environment.
