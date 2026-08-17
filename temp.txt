@@ -1,5 +1,3 @@
-Noted. I am fast-tracking the remaining activities.
+DevSecOps activities for the Enterprise Services have been completed. Closure is currently pending Security activities for DAST target configuration/scanning through Acunetix and SAST coverage for the remaining modules, either through Checkmarx following license renewal or the planned SonarQube implementation.
 
-Current status is that the Nexus UAT server has been started successfully, with no apparent application errors in the startup logs. The remaining immediate dependency is network access to the Nexus UAT application on port 8081 from VDI.
-
-I have already followed up with the Network team in person, raised the required ticket, and sent an email follow-up. Once access is granted, I will proceed with the UAT validation and remaining configuration activities.
+The ticket therefore remains open pending completion of these Security dependencies.
