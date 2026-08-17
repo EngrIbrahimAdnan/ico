@@ -1,5 +1,5 @@
-**Overdue Justification:**
+Update:
 
-DR and Production Node 2 onboarding is taking longer due to additional validation required around the shared Bitbucket database and configuration. During testing, the DR and Production Node 1 Base URL configuration became interlinked, resulting in an incorrect URL/certificate presentation and temporary impact to developers.
+The upgrade has required additional time due to sequential infrastructure dependencies, including UAT server provisioning, PostgreSQL commissioning, firewall/proxy access, and database authentication configuration. Initial Nexus startup also required troubleshooting of the PostgreSQL connectivity and host-based authentication configuration.
 
-Additional validation is therefore being performed to ensure the DR and Node 2 configurations remain isolated where required and that shared components, including NFS storage, are onboarded safely without impacting the Production environment.
+These dependencies have now been resolved, and Nexus 3.95.0-07 is successfully running on UAT with PostgreSQL and accessible from the VDI. Current activities are focused on final UAT configuration, log validation, and repository/blob storage validation before proceeding with the controlled migration.
