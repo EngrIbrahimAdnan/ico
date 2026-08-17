@@ -1,16 +1,7 @@
-Configure Microsoft Entra ID Integration for UCD Production
+**Subject: Required Firewall Rules for Acunetix Updates and Upgrades**
 
+We are currently using Acunetix DAST version **25.11.251107123** and want to ensure the platform can be regularly updated/upgraded without requiring new firewall requests each time.
 
-Description
+Please provide the **required destination domains, ports, and protocols** that must be permanently allowed for Acunetix to download updates, perform upgrades, and access any required vendor services.
 
-Implement Microsoft Entra ID integration with the UCD production environment to enable centralized authentication.
-
-The activity includes:
-
-Configure the required UCD OpenID Connect/Entra ID parameters.
-Coordinate the required Entra ID application configuration and UCD URI/redirect details.
-Validate authentication and access flows in the production environment.
-Confirm existing UCD access remains unaffected following the integration.
-Document the final configuration and implementation outcome.
-
-Note: UCD is production-only for this integration, with no dedicated UAT environment available for Entra ID validation; therefore, production changes require controlled implementation and validation.
+We would like to establish the necessary firewall rules in advance to support future updates.
