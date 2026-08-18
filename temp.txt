@@ -1,10 +1,21 @@
-Dear [Manager's Name],
+# Firewall Access Request – GitHub HTTPS Connectivity for Nexus SPM Testing
 
-Just to clarify regarding the Coursera requirement, the two certificates had already been completed in July, and HR was informed at the time. The understanding then was that the required learning had been completed, with the option to continue with additional courses relevant to the department.
+**Source:** Nexus UAT server
+**Destination:** GitHub endpoints
+**Protocol/Port:** HTTPS / TCP 443
+**Direction:** Outbound
 
-The certificates have now been shared with HR, and they have confirmed that only one course was required for the team and that the learning requirement for the year is considered complete.
+## Description
 
-Just wanted to clarify the background, as the requirement had already been addressed and communicated with HR earlier.
+Request outbound HTTPS connectivity from the Nexus UAT server to the required GitHub endpoints to support testing of **Swift Package Manager (SPM) repository functionality** introduced in Nexus Repository 3.95.0-07.
 
-Regards,
-Ibrahim
+The SPM proxy workflow may access GitHub repositories and subsequently redirect package/content downloads to additional GitHub-hosted endpoints. The following destinations are therefore required:
+
+* `github.com`
+* `api.github.com`
+* `codeload.github.com`
+* `*.githubusercontent.com` (including `objects.githubusercontent.com`)
+
+This connectivity is required to validate end-to-end Swift package discovery, download, proxying, and caching through the Nexus UAT Swift repository.
+
+The access is **outbound HTTPS only** from the Nexus UAT server; no inbound connectivity from GitHub to the Nexus server is required.
