@@ -1,3 +1,10 @@
-GitHub: Required for testing the newly available Swift Package Manager (SPM) functionality in Nexus 3.95.0-07. The Nexus Swift proxy repository requires connectivity to the upstream Swift package registry, with GitHub used as the upstream source. This will allow us to validate package discovery, download/proxying, caching, and SPM integration from the new Nexus UAT instance.
-Sonatype telemetry: Required to allow Nexus Repository to communicate with Sonatype's telemetry service. The current Nexus logs show failed telemetry uploads because nxrm.telemetry.sonatype.com cannot currently be resolved/reached. This is an external connectivity/DNS requirement identified during UAT validation.
-Both destinations are outbound HTTPS connections initiated by the Nexus server; no inbound access from these external services to Nexus is required.
+Dear [Manager's Name],
+
+Just to clarify regarding the Coursera requirement, the two certificates had already been completed in July, and HR was informed at the time. The understanding then was that the required learning had been completed, with the option to continue with additional courses relevant to the department.
+
+The certificates have now been shared with HR, and they have confirmed that only one course was required for the team and that the learning requirement for the year is considered complete.
+
+Just wanted to clarify the background, as the requirement had already been addressed and communicated with HR earlier.
+
+Regards,
+Ibrahim
