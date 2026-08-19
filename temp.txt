@@ -1,1 +1,12 @@
-Sonatype telemetry: Required to allow Nexus Repository to communicate with Sonatype's telemetry service. The current Nexus logs show failed telemetry uploads because nxrm.telemetry.sonatype.com cannot currently be resolved/reached. This is an external connectivity/DNS requirement identified during UAT validation.
+LDAP/LDAPS configuration for Nexus UAT has been progressed and troubleshooting performed.
+
+* Configured Nexus LDAP using **LDAPS/TCP 636** and required authentication/search parameters.
+* Added the LDAP certificate through Nexus **SSL Certificates**.
+* Confirmed network connectivity and successful TLS handshake to the LDAP server using `openssl s_client`.
+* Certificate inspection confirmed the LDAP certificate is issued by internal **CA-UAT34F**.
+* OpenSSL reported `unable to get local issuer certificate`, indicating a certificate trust-chain issue.
+* Nexus **Verify Connection** continues to fail.
+* Identified Nexus-managed `private.ks` and `trusted.ks` keystores. No manual modifications were made.
+* Further investigation is required to confirm the appropriate CA/truststore configuration before making changes.
+
+**Current status:** LDAP connectivity is reachable, with the remaining issue isolated to certificate trust/configuration.
