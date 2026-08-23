@@ -1,18 +1,10 @@
 Hi Team,
 
-We are currently configuring LDAPS authentication for Nexus UAT.
+We are currently configuring LDAPS connectivity for Nexus UAT and would like to confirm the correct CA certificate required for the LDAP server.
 
-Connectivity to the LDAP server over TCP/636 and the TLS handshake are successful. However, certificate verification is failing with:
+The LDAP server certificate is being presented successfully over TCP/636. During certificate validation, we have observed references to both **CA-UAT34F** and **CA-UAT22F**. We also understand that **CA-UAT22F** is currently applied for the LDAP environment.
 
-`unable to get local issuer certificate`
-
-The LDAP server certificate shows the following issuer:
-
-`CN=CA-UAT34F`
-
-Could you please provide the appropriate **CA certificate or complete certificate chain** required to establish trust for this LDAP server certificate?
-
-For reference, the CA used for our other LDAP environment is **CA-UAT22F**, so we want to ensure we obtain the correct CA/chain for this UAT LDAP server.
+Could you please confirm which CA certificate/chain should be trusted for this LDAP server and provide the applicable CA certificate in `.cer`/`.crt` format for installation on the Nexus UAT server?
 
 Thanks,
 Ibrahim
