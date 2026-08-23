@@ -1,12 +1,19 @@
-LDAP/LDAPS configuration for Nexus UAT has been progressed and troubleshooting performed.
+[Unit]
+Description=Nexus Repository
+After=network.target
 
-* Configured Nexus LDAP using **LDAPS/TCP 636** and required authentication/search parameters.
-* Added the LDAP certificate through Nexus **SSL Certificates**.
-* Confirmed network connectivity and successful TLS handshake to the LDAP server using `openssl s_client`.
-* Certificate inspection confirmed the LDAP certificate is issued by internal **CA-UAT34F**.
-* OpenSSL reported `unable to get local issuer certificate`, indicating a certificate trust-chain issue.
-* Nexus **Verify Connection** continues to fail.
-* Identified Nexus-managed `private.ks` and `trusted.ks` keystores. No manual modifications were made.
-* Further investigation is required to confirm the appropriate CA/truststore configuration before making changes.
+[Service]
+Type=forking
+User=nexus
+Group=nexus
 
-**Current status:** LDAP connectivity is reachable, with the remaining issue isolated to certificate trust/configuration.
+ExecStart=/u01/nexus/nexus-3.95.0-07/bin/nexus start
+ExecStop=/u01/nexus/nexus-3.95.0-07/bin/nexus stop
+ExecReload=/u01/nexus/nexus-3.95.0-07/bin/nexus restart
+
+TimeoutStartSec=300
+TimeoutStopSec=300
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
