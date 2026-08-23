@@ -1,19 +1,18 @@
-[Unit]
-Description=Nexus Repository
-After=network.target
+Hi Team,
 
-[Service]
-Type=forking
-User=nexus
-Group=nexus
+We are currently configuring LDAPS authentication for Nexus UAT.
 
-ExecStart=/u01/nexus/nexus-3.95.0-07/bin/nexus start
-ExecStop=/u01/nexus/nexus-3.95.0-07/bin/nexus stop
-ExecReload=/u01/nexus/nexus-3.95.0-07/bin/nexus restart
+Connectivity to the LDAP server over TCP/636 and the TLS handshake are successful. However, certificate verification is failing with:
 
-TimeoutStartSec=300
-TimeoutStopSec=300
-Restart=on-failure
+`unable to get local issuer certificate`
 
-[Install]
-WantedBy=multi-user.target
+The LDAP server certificate shows the following issuer:
+
+`CN=CA-UAT34F`
+
+Could you please provide the appropriate **CA certificate or complete certificate chain** required to establish trust for this LDAP server certificate?
+
+For reference, the CA used for our other LDAP environment is **CA-UAT22F**, so we want to ensure we obtain the correct CA/chain for this UAT LDAP server.
+
+Thanks,
+Ibrahim
