@@ -1,16 +1,22 @@
-Ticket Status Update and Guidance Required
+**To the Admissions Committee,**
 
-Hi [Manager Name],
+I am pleased to recommend **Mr. Fawaz Alhubail** for admission to the Master of Security Studies program at Georgetown University. I have worked alongside Fawaz for approximately eight months in our respective roles at Boubyan Bank, where my responsibilities are focused on Cloud Operations and his role is focused on security. Through our work together, I have had the opportunity to observe his approach to cybersecurity, risk, compliance, and cross-functional coordination.
 
-I wanted to provide a quick update on the below items and get your advice on how you would like me to proceed, particularly as some of the tickets are now overdue.
+One of Fawaz's strongest qualities is his ability to communicate security requirements clearly while maintaining a strong awareness of their operational importance. Much of our interaction has involved security-related requests, including firewall tickets, security assessment and risk items, and compliance-related actions. He consistently demonstrates good judgment in understanding the priority of these matters and works efficiently with the relevant teams to ensure that required actions are completed.
 
-* **Enterprise Services:** Four tickets covering 63 modules are still pending DAST activities from Security, while the SAST approach is still under discussion between Checkmarx and SonarQube. As there is currently an external dependency, would you prefer these tickets to remain **In Progress** or be moved to **On Hold** until the pending activities are resolved?
+A particular example was his involvement in identifying and addressing Windows print-related vulnerabilities affecting hosts within the bank's environment. This demonstrated his attention to emerging security concerns and his ability to translate a security finding into a practical remediation requirement. His approach was not limited to identifying the issue; he also understood the importance of coordinating the necessary actions with the teams responsible for implementation.
 
-* **Checkmarx Upgrade (Windows):** If the decision is to move SAST from Checkmarx to SonarQube, the planned Checkmarx upgrade would become obsolete. In this case, should I proceed with cancelling/closing this ticket as no longer applicable?
+I have also worked with Fawaz on recurring risk coordination activities involving the Chief Risk Officer's office, which take place approximately every two months. In these activities, he has demonstrated an understanding of the importance of maintaining appropriate security controls, documenting and addressing risks, and ensuring that outstanding matters receive the necessary attention. His attention to compliance is particularly evident in his efforts to keep required security measures and training up to date within the bank.
 
-* **Nexus Staging:** I have started submitting the required tickets to begin the staging setup. For the production database provisioning required for Nexus configuration (excluding the blob storage), I initially set the completion date as today due to the urgency of having this ready for next Monday's CAB. The DB team has advised that the requested completion date should instead be **31 August**, which is the CAB date. Would you prefer that I meet their requested date, or set a midway target to allow some buffer before CAB?
+Another quality I have consistently observed is his responsiveness. When security-related tickets require coordination through Teams or approval before network changes can be implemented, Fawaz is prompt in communicating the priority and requirements of the request. His ability to move matters forward efficiently is valuable in an environment where security actions often need to be balanced with operational requirements.
 
-Please advise on the preferred approach, and I will proceed accordingly.
+Fawaz's academic background in cybersecurity, together with his professional experience and security-related certifications, provides a solid foundation for further study in security. I believe that Georgetown's Master of Security Studies program would allow him to build upon his practical experience by developing a broader understanding of security, risk, and the strategic considerations surrounding them.
 
-Regards,
-Ibrahim
+Based on my experience working with Fawaz, I recommend him **very strongly** for admission to the Master of Security Studies program. I believe he would approach the program with the same professionalism, responsiveness, and commitment to security that I have observed in our work together.
+
+**Sincerely,**
+
+**Ibrahim Alibrahim**
+CloudOps Engineer
+Boubyan Bank
+M.S., Electrical Engineering, Columbia University
