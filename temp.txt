@@ -1,10 +1,16 @@
-Hi Team,
+Ticket Status Update and Guidance Required
 
-We are currently configuring LDAPS connectivity for Nexus UAT and would like to confirm the correct CA certificate required for the LDAP server.
+Hi [Manager Name],
 
-The LDAP server certificate is being presented successfully over TCP/636. During certificate validation, we have observed references to both **CA-UAT34F** and **CA-UAT22F**. We also understand that **CA-UAT22F** is currently applied for the LDAP environment.
+I wanted to provide a quick update on the below items and get your advice on how you would like me to proceed, particularly as some of the tickets are now overdue.
 
-Could you please confirm which CA certificate/chain should be trusted for this LDAP server and provide the applicable CA certificate in `.cer`/`.crt` format for installation on the Nexus UAT server?
+* **Enterprise Services:** Four tickets covering 63 modules are still pending DAST activities from Security, while the SAST approach is still under discussion between Checkmarx and SonarQube. As there is currently an external dependency, would you prefer these tickets to remain **In Progress** or be moved to **On Hold** until the pending activities are resolved?
 
-Thanks,
+* **Checkmarx Upgrade (Windows):** If the decision is to move SAST from Checkmarx to SonarQube, the planned Checkmarx upgrade would become obsolete. In this case, should I proceed with cancelling/closing this ticket as no longer applicable?
+
+* **Nexus Staging:** I have started submitting the required tickets to begin the staging setup. For the production database provisioning required for Nexus configuration (excluding the blob storage), I initially set the completion date as today due to the urgency of having this ready for next Monday's CAB. The DB team has advised that the requested completion date should instead be **31 August**, which is the CAB date. Would you prefer that I meet their requested date, or set a midway target to allow some buffer before CAB?
+
+Please advise on the preferred approach, and I will proceed accordingly.
+
+Regards,
 Ibrahim
