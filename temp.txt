@@ -1,22 +1,23 @@
-**To the Admissions Committee,**
+export HTTP_PROXY="http://10.x.x.x:8080"
+export HTTPS_PROXY="http://10.x.x.x:8080"
+export http_proxy="http://10.x.x.x:8080"
+export https_proxy="http://10.x.x.x:8080"
 
-I am pleased to recommend **Mr. Fawaz Alhubail** for admission to the Master of Security Studies program at Georgetown University. I have worked alongside Fawaz for approximately eight months in our respective roles at Boubyan Bank, where my responsibilities are focused on Cloud Operations and his role is focused on security. Through our work together, I have had the opportunity to observe his approach to cybersecurity, risk, compliance, and cross-functional coordination.
 
-One of Fawaz's strongest qualities is his ability to communicate security requirements clearly while maintaining a strong awareness of their operational importance. Much of our interaction has involved security-related requests, including firewall tickets, security assessment and risk items, and compliance-related actions. He consistently demonstrates good judgment in understanding the priority of these matters and works efficiently with the relevant teams to ensure that required actions are completed.
 
-A particular example was his involvement in identifying and addressing Windows print-related vulnerabilities affecting hosts within the bank's environment. This demonstrated his attention to emerging security concerns and his ability to translate a security finding into a practical remediation requirement. His approach was not limited to identifying the issue; he also understood the importance of coordinating the necessary actions with the teams responsible for implementation.
+sudo chmod 644 /etc/profile.d/proxy.sh
 
-I have also worked with Fawaz on recurring risk coordination activities involving the Chief Risk Officer's office, which take place approximately every two months. In these activities, he has demonstrated an understanding of the importance of maintaining appropriate security controls, documenting and addressing risks, and ensuring that outstanding matters receive the necessary attention. His attention to compliance is particularly evident in his efforts to keep required security measures and training up to date within the bank.
 
-Another quality I have consistently observed is his responsiveness. When security-related tickets require coordination through Teams or approval before network changes can be implemented, Fawaz is prompt in communicating the priority and requirements of the request. His ability to move matters forward efficiently is valuable in an environment where security actions often need to be balanced with operational requirements.
 
-Fawaz's academic background in cybersecurity, together with his professional experience and security-related certifications, provides a solid foundation for further study in security. I believe that Georgetown's Master of Security Studies program would allow him to build upon his practical experience by developing a broader understanding of security, risk, and the strategic considerations surrounding them.
 
-Based on my experience working with Fawaz, I recommend him **very strongly** for admission to the Master of Security Studies program. I believe he would approach the program with the same professionalism, responsiveness, and commitment to security that I have observed in our work together.
+export NO_PROXY="localhost,127.0.0.1,<NEXUS_IP>,<POSTGRES_IP>,<INTERNAL_DOMAINS>"
+export no_proxy="$NO_PROXY"
 
-**Sincerely,**
 
-**Ibrahim Alibrahim**
-CloudOps Engineer
-Boubyan Bank
-M.S., Electrical Engineering, Columbia University
+
+
+source /etc/profile.d/proxy.sh
+
+
+
+env | grep -i proxy
