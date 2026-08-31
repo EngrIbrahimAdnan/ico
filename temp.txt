@@ -1,23 +1,9 @@
-export HTTP_PROXY="http://10.x.x.x:8080"
-export HTTPS_PROXY="http://10.x.x.x:8080"
-export http_proxy="http://10.x.x.x:8080"
-export https_proxy="http://10.x.x.x:8080"
+Provision Temporary Bitbucket Database for DR and Production Node 2 Testing
 
 
 
-sudo chmod 644 /etc/profile.d/proxy.sh
+**Purpose:** Provision a temporary Bitbucket database for DR and Production Node 2 testing.
 
+Kindly provision the database with the **minimum required storage**, based on the current database usage in Production, to support Bitbucket configuration and NFS testing.
 
-
-
-export NO_PROXY="localhost,127.0.0.1,<NEXUS_IP>,<POSTGRES_IP>,<INTERNAL_DOMAINS>"
-export no_proxy="$NO_PROXY"
-
-
-
-
-source /etc/profile.d/proxy.sh
-
-
-
-env | grep -i proxy
+The database will be used temporarily during the testing phase.
