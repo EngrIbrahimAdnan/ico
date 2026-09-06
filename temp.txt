@@ -1,30 +1,9 @@
-## Change objective
+Requesting Information Security assessment for the upgraded Nexus Repository 3.95.0-07 environment prior to production promotion.
 
-Promote the newly configured Nexus Repository 3.95.0-07 staging environment to production to support the upgraded repository platform and its associated integrations.
+The new Nexus server will be deployed on a **separate, dedicated production IP address** and will operate independently from the existing production Nexus server. The existing production Nexus server and its current IP will remain operational and will not be modified as part of this activity.
 
-## Current validation status
+The environment has been configured and initially validated in staging, including connectivity to the external PostgreSQL database, user access, VDI accessibility, and GitHub connectivity.
 
-The staging environment has been validated for the following:
+Security assessment is required to validate the new production server and identify any security findings that must be remediated or formally addressed before proceeding with the CAB-approved production promotion.
 
-* Accessible through the corporate VDI.
-* Successfully connected to the external PostgreSQL database.
-* User login verified.
-* GitHub connectivity verified.
-
-## Proposed change
-
-Promote the validated staging environment to the production environment, subject to CAB approval, and proceed with the required production configuration and operational readiness activities.
-
-## Implementation window
-
-The change is planned for the upcoming weekend, following CAB approval.
-
-## Rollback
-
-If any critical issue is identified during the change, revert to the existing production Nexus environment and restore the previous production configuration.
-
-
-
-
-
-This change is required to promote the upgraded Nexus Repository platform to production and enable the organization to move forward with the new repository capabilities. The staging environment has completed the initial connectivity and access validation, and the weekend implementation window is requested to minimize business impact.
+The assessment is therefore requested for the **new Nexus 3.95.0-07 production server/IP** and not the existing production Nexus environment.
