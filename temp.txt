@@ -1,9 +1,30 @@
-Provision Temporary Bitbucket Database for DR and Production Node 2 Testing
+## Change objective
+
+Promote the newly configured Nexus Repository 3.95.0-07 staging environment to production to support the upgraded repository platform and its associated integrations.
+
+## Current validation status
+
+The staging environment has been validated for the following:
+
+* Accessible through the corporate VDI.
+* Successfully connected to the external PostgreSQL database.
+* User login verified.
+* GitHub connectivity verified.
+
+## Proposed change
+
+Promote the validated staging environment to the production environment, subject to CAB approval, and proceed with the required production configuration and operational readiness activities.
+
+## Implementation window
+
+The change is planned for the upcoming weekend, following CAB approval.
+
+## Rollback
+
+If any critical issue is identified during the change, revert to the existing production Nexus environment and restore the previous production configuration.
 
 
 
-**Purpose:** Provision a temporary Bitbucket database for DR and Production Node 2 testing.
 
-Kindly provision the database with the **minimum required storage**, based on the current database usage in Production, to support Bitbucket configuration and NFS testing.
 
-The database will be used temporarily during the testing phase.
+This change is required to promote the upgraded Nexus Repository platform to production and enable the organization to move forward with the new repository capabilities. The staging environment has completed the initial connectivity and access validation, and the weekend implementation window is requested to minimize business impact.
