@@ -1,9 +1,20 @@
-Requesting Information Security assessment for the upgraded Nexus Repository 3.95.0-07 environment prior to production promotion.
+Nexus production promotion — CAB readiness
 
-The new Nexus server will be deployed on a **separate, dedicated production IP address** and will operate independently from the existing production Nexus server. The existing production Nexus server and its current IP will remain operational and will not be modified as part of this activity.
 
-The environment has been configured and initially validated in staging, including connectivity to the external PostgreSQL database, user access, VDI accessibility, and GitHub connectivity.
 
-Security assessment is required to validate the new production server and identify any security findings that must be remediated or formally addressed before proceeding with the CAB-approved production promotion.
 
-The assessment is therefore requested for the **new Nexus 3.95.0-07 production server/IP** and not the existing production Nexus environment.
+
+
+Dear [Manager Name],
+
+Before submitting the CAB for the weekend promotion, I would like to highlight the remaining prerequisites.
+
+The staging Nexus environment has passed its initial validation. However, the Tenable Nessus scan identified 3 High and 1 Critical RHEL 9 vulnerabilities, which require OS team remediation or formal suppression. The corporate certificate is also still pending.
+
+We therefore need to complete the remediation, apply the certificate, and rescan the server to confirm there are no outstanding High or Critical findings before proceeding with CAB submission.
+
+Given the realistic remediation and scanning timeline, and the possibility of additional findings, I believe Express CAB would be the most realistic option if the weekend window is still available.
+
+I will continue coordinating with the OS team and proceed with the CAB once the prerequisites are cleared.
+
+Please advise if you would prefer a different approach to the timeline.
